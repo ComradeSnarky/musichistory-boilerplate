@@ -1,7 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
 .nav  {
   border: 2px solid;
   background-color: #FFB4B0;
   height: 50px;
+  width: 800px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+.view {
+  border-right: 2px solid;
+  padding-right: 7px;
+}
+.add {
+  border-right: 2px solid;
+  padding-right: 7px;
 }
 
 .nav li {
@@ -14,27 +30,68 @@
 .lcd li {
   list-style: none;
   display: inline-block;
+  border-right: 2px solid;
+  padding: 0 14px;
 }
 .jenny li {
   list-style: none;
   display: inline-block;
+  border-right: 2px solid;
+  padding: 0 14px;
 }
 .chairlift li {
   list-style: none;
   display: inline-block;
+  border-right: 2px solid;
+  padding: 0 14px;
 }
 .belle li {
   list-style: none;
   display: inline-block;
+  border-right: 2px solid;
+  padding: 0 14px;
 }
 
 #songList {
-  float: right;
+  
+  margin-left: 50px;
+  background-color: #FEFAC0;
+  border: 2px solid;
+  width: 600px;
+  padding-left: 20px;
+  font-family: sans-serif;
+  float: left;
+  position: relative;
+  margin-right: auto;
+}
+
+.dropdowns {
+  float: left;
+  margin-left: 50px;
+  margin-right: -40px;
+  margin-top: 0px;
+  position: relative;
+  text-align: right;
+  border: 2px solid;
+  background-color: #4DD7FA;
+  padding-right: 5px;
+  height: 363px;
 }
 
 .artists {
-  display: block;
+  margin-top: 100px;
   margin-bottom: 30px;
+  width: 180px;
+  float: right;
+  padding: 100px;
+  display: inline-block;
+}
+
+.albums {
+  width: 180px;
+  float: left;
+  display: inline-block;
+  padding: 100px;
 }
 
 a:active {
