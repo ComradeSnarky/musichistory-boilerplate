@@ -1,0 +1,48 @@
+.nav  {
+  border: 2px solid;
+  background-color: #FFB4B0;
+  height: 50px;
+}
+
+.nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 1px;
+  margin-top: 15px;
+}
+
+.lcd li {
+  list-style: none;
+  display: inline-block;
+}
+.jenny li {
+  list-style: none;
+  display: inline-block;
+}
+.chairlift li {
+  list-style: none;
+  display: inline-block;
+}
+.belle li {
+  list-style: none;
+  display: inline-block;
+}
+
+#songList {
+  float: right;
+}
+
+.artists {
+  display: block;
+  margin-bottom: 30px;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
