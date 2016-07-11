@@ -8,7 +8,7 @@
   border: 2px solid;
   background-color: #FFB4B0;
   height: 50px;
-  width: 800px;
+  width: 975px;
   margin-left: 50px;
   margin-bottom: 10px;
 }
@@ -30,11 +30,17 @@
 }
 
 .header1 {
+  /*padding-left: 10px;*/
+  padding-top: 82px;
+  position: absolute;
+  left: 30px;
   
 }
 
 .header2 {
-  margin-right: 120px;
+  float: left;
+  padding-left: 30px;
+  display: inline-block;
 }
 
 .lcd li {
@@ -67,7 +73,7 @@
   margin-left: 50px;
   background-color: #FEFAC0;
   border: 2px solid;
-  width: 600px;
+  width: 760px;
   padding-left: 20px;
   font-family: sans-serif;
   float: left;
@@ -86,22 +92,23 @@
   background-color: #4DD7FA;
   padding-right: 5px;
   height: 363px;
+  width: 205px
 }
 
 .artists {
   margin-top: 100px;
   margin-bottom: 30px;
+  margin-right: 20px
   width: 180px;
-  float: right;
+  position: absolute;
   padding: 100px;
-  display: inline-block;
+  display: block;
 }
 
 .albums {
   width: 180px;
-  float: left;
-  display: inline-block;
-  padding: 100px;
+  display: block;
+  padding: 300px;
 }
 
 a:active {
