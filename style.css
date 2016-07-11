@@ -30,17 +30,31 @@
 }
 
 .header1 {
-  /*padding-left: 10px;*/
-  padding-top: 82px;
-  position: absolute;
-  left: 30px;
-  
+  float: left;
+  margin-top: 32px;
+  margin-left: 20px
 }
 
 .header2 {
   float: left;
-  padding-left: 30px;
-  display: inline-block;
+  margin-left: 20px
+}
+
+.checkboxes {
+  text-align: left;
+  padding-top: 20px;
+
+}
+
+.leftbuttons {
+  float: left;
+  margin-left: 20px;
+}
+
+.rightbuttons {
+  float: right;
+  padding-top: 0px;
+  margin-right: 40px;
 }
 
 .lcd li {
@@ -77,16 +91,24 @@
   padding-left: 20px;
   font-family: sans-serif;
   float: left;
-  position: relative;
+  /*position: relative;*/
   margin-right: auto;
+}
+
+.slidertitle {
+  margin: 10px 75px 10px 0;
+}
+
+#slider {
+  margin-right: 30px
 }
 
 .dropdowns {
   float: left;
   margin-left: 50px;
   margin-right: -40px;
-  margin-top: 0px;
-  position: relative;
+  
+  /*position: relative;*/
   text-align: right;
   border: 2px solid;
   background-color: #4DD7FA;
@@ -96,19 +118,17 @@
 }
 
 .artists {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 30px;
-  margin-right: 20px
-  width: 180px;
-  position: absolute;
-  padding: 100px;
-  display: block;
+  margin-left: 10px
+  width: 200px;
+  display: inline-block;
 }
 
 .albums {
-  width: 180px;
-  display: block;
-  padding: 300px;
+  width: 150px;
+  display: inline-block;
+  padding: 300px; 
 }
 
 a:active {
