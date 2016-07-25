@@ -41,21 +41,38 @@
 }
 
 .checkboxes {
-  text-align: left;
+  margin-top: 10%;
   padding-top: 20px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
 
+.genre {
+  margin-right: 130px;
 }
 
 .leftbuttons {
-  float: left;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  display: inline-block;
+
 }
 
 .rightbuttons {
-  float: right;
-  padding-top: 0px;
-  margin-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
 }
+
+.filter {
+  margin-right: 70px;
+  width: 40%;
+  height: 7%;
+ }
+
 
 .lcd li {
   list-style: none;
@@ -83,7 +100,7 @@
 }
 
 #songList {
-  
+
   margin-left: 50px;
   background-color: #FEFAC0;
   border: 2px solid;
@@ -91,12 +108,11 @@
   padding-left: 20px;
   font-family: sans-serif;
   float: left;
-  /*position: relative;*/
   margin-right: auto;
 }
 
 .slidertitle {
-  margin: 10px 75px 10px 0;
+  margin: 10px 95px 10px 0;
 }
 
 #slider {
@@ -107,8 +123,6 @@
   float: left;
   margin-left: 50px;
   margin-right: -40px;
-  
-  /*position: relative;*/
   text-align: right;
   border: 2px solid;
   background-color: #4DD7FA;
@@ -118,18 +132,17 @@
 }
 
 .artists {
-  margin-top: 50px;
   margin-bottom: 30px;
-  margin-left: 10px
-  width: 200px;
+  margin-left: 10px;
+  width: 150px  ;
   display: inline-block;
 }
 
 .albums {
   width: 150px;
   display: inline-block;
-  padding: 300px; 
 }
+
 
 a:active {
   text-decoration: none;

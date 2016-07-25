@@ -15,22 +15,22 @@
     </header>
     <div class="dropdowns">
       <form>
-          <div class="slidertitle">Song length:</div>
+        <div class="slidertitle">Song length:</div>
         <input id="slider" type="range" name="songLength">
       </form>
       <span class="header1">Artists:</span>
       <select class="artists">
-        <option value=""disabled selected>Options</option>
+        <option value=""selected>Options</option>
         <option value="LCD Soundsystem">LCD Soundsystem</option>
         <option value="Jenny Lewis">Jenny Lewis</option>
         <option value="Chairlift">Chairlift</option>
         <option value="Okkervil River">Okkervil River</option>
         <option value="Belle and Sebastian">Belle & Sebastian</option>
       </select>
-      <br>
+
       <span class="header2">Albums:</span>
       <select class="albums">
-        <option value=""disabled selected>Options</option>
+        <option value=""selected>Options</option>
         <option value="Sound Of Silver">Sound Of Silver</option>
         <option value="This Is Happening">This Is Happening</option>
         <option value="Acid Tongue">Acid Tongue</option>
@@ -43,26 +43,28 @@
         <option value="Write About Love">Write About Love</option>
         <option value="Girls in Peacetime Want to Dance">Girls in Peacetime Want to Dance</option>
       </select>
-    <div class="checkboxes">
-    <div>Genre:</div>
-      <form class="leftbuttons">
-        
-        <div><input id="top" type="checkbox" name="genre" value="Rock">Rock</div>
-        <div><input type="checkbox" name="genre" value="Pop">Pop</div>
-        <div><input id="middle" type="checkbox" name="genre" value="Indie">Indie</div>
-      </form>
-      <form class="rightbuttons">
-        <div><input type="checkbox" name="genre" value="Jazz">Jazz</div>
-        <div><input id="bottom" type="checkbox" name="genre" value="Hip Hop">Hip Hop</div>
-        <div><input type="checkbox" name="genre" value="Classical">Classical</div>
-      </form>
-    </div>
+
+      <div class="checkboxes">
+        <div class="genre">Genre:</div>
+        <form class="leftbuttons">
+          <div><input id="top" type="checkbox" name="genre" value="Rock">Rock</div>
+          <div><input type="checkbox" name="genre" value="Pop">Pop</div>
+          <div><input id="middle" type="checkbox" name="genre" value="Indie">Indie</div>
+        </form>
+        <form class="rightbuttons">
+          <div><input type="checkbox" name="genre" value="Jazz">Jazz</div>
+          <div><input id="bottom" type="checkbox" name="genre" value="Hip Hop">Hip Hop</div>
+          <div><input type="checkbox" name="genre" value="Classical">Classical</div>
+        </form>
+
+      </div>
+      <button class ="filter" name="submit">Filter</button>
     </div>
     <section id="songList">
       <div>
         <h2>Dance Yrself Clean</h2>
         <ul class="lcd">
-          <li>LCD Soundsystem</li>
+          <li class="">LCD Soundsystem</li>
           <li>This Is Happening</li>
           <li>Electronica</li>
         </ul>
