@@ -1,11 +1,5 @@
 var songs = [
   {
-    name: 'Give it to me baby',
-    artist: 'Rick James',
-    album: 'Funk Forever',
-    genre: 'Funk'
-  },
-  {
     name: 'Dance Yrself Clean',
     artist: 'LCD Soundsystem',
     album: 'This is Happening',
@@ -83,11 +77,35 @@ songs.forEach(function (songsObj) {
                  <p><strong>|</strong></p>
                <p>${songsObj.album}</p>
                  <p><strong>|</strong></p>
-               <p>${songsObj.genre}</p>
+               <p>${songsObj.genre} <button id="delete">Delete</button></p>
             </section>`;
           });
 
 
+// document.getElementById("songInput").addEventListener("click", function(event){
+//     if(event.target.id === ("delete") {
+//       event.target.parentElement.remove()
+//   }
+// });
+
 // Once the user fills out the song form and clicks the add button,
 // you should collect all values from the input fields,
 // add the song to your array of songs, and update the song list in the DOM.
+
+document.getElementById("addMusicButton").addEventListener('click', function(){
+
+  var addSong = document.getElementById('userSongInput').value;
+  var addArtist = document.getElementById('userArtistInput').value;
+  var addAlbum = document.getElementById('userAlbumInput').value;
+  var addNewSong = addSong + " " + addArtist + " " + addAlbum
+
+songList.innerHTML +=
+`<p>${addNewSong} <button id="delete">Delete</button></p>`
+document.getElementById('userSongInput').value = ""
+document.getElementById('userArtistInput').value = ""
+document.getElementById('userAlbumInput').value = ""
+})
+
+
+
+
