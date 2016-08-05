@@ -1,86 +1,80 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Music History</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<nav class="nav">
-  <ul>
-  <li class="background"><a href="#" id="link-home"></a></li>
-  <li class="background"><a href="#" id="link-list">List Music </a></li>
-  <li class="break">|</li>
-  <li class="background"><a href="#" id="link-add">Add Music</a></li>
-</ul>
-</nav>
-
-
-<section id="list-view" class="main-view">
-  <div class="dropdowns">
-      <form>
-        <div class="slidertitle">Song length:</div>
-        <input id="slider" type="range" name="songLength">
-      </form>
-      <span class="header1">Artists:</span>
-      <select class="artists">
-        <option value=""selected>Artist Options</option>
-        <option value="LCD Soundsystem">LCD Soundsystem</option>
-        <option value="Jenny Lewis">Jenny Lewis</option>
-        <option value="Chairlift">Chairlift</option>
-        <option value="Okkervil River">Okkervil River</option>
-        <option value="Belle and Sebastian">Belle & Sebastian</option>
-      </select>
-
-      <span class="header2">Albums:</span>
-      <select class="albums">
-        <option value=""selected>Album Options</option>
-        <option value="Sound Of Silver">Sound Of Silver</option>
-        <option value="This Is Happening">This Is Happening</option>
-        <option value="Acid Tongue">Acid Tongue</option>
-        <option value="The Voyager">The Voyager</option>
-        <option value="Something">Something</option>
-        <option value="Moth">Moth</option>
-        <option value="Don't Fall In Love With Everyone You Meet">Don't Fall In Love With Everyone You Meet</option>
-        <option value="The Stage Names">The Stage Names</option>
-        <option value="The Stand Ins">The Stand Ins</option>
-        <option value="Write About Love">Write About Love</option>
-        <option value="Girls in Peacetime Want to Dance">Girls in Peacetime Want to Dance</option>
-      </select>
-
-      <div class="checkboxes">
-        <div class="genre">Genre:</div>
-        <form class="leftbuttons">
-          <div><input id="top" type="checkbox" name="genre" value="Rock">Rock</div>
-          <div><input type="checkbox" name="genre" value="Pop">Pop</div>
-          <div><input id="middle" type="checkbox" name="genre" value="Indie">Indie</div>
+  <head>
+    <title>Music History</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <nav class="nav">
+      <ul>
+        <li class="background"><a href="#" id="link-home"></a></li>
+        <li class="background"><a href="#" id="link-list">List Music </a></li>
+        <li class="break">|</li>
+        <li class="background"><a href="#" id="link-add">Add Music</a></li>
+      </ul>
+    </nav>
+    <section id="list-view" class="main-view">
+      <div class="dropdowns">
+        <form>
+          <div class="slidertitle">Song length:</div>
+          <input id="slider" type="range" name="songLength">
         </form>
-        <form class="rightbuttons">
-          <div><input type="checkbox" name="genre" value="Jazz">Jazz</div>
-          <div><input id="bottom" type="checkbox" name="genre" value="Hip Hop">Hip Hop</div>
-          <div><input type="checkbox" name="genre" value="Classical">Classical</div>
-        </form>
-
+        <span class="header1">Artists:</span>
+        <select class="artists">
+          <option value=""selected>Artist Options</option>
+          <option value="LCD Soundsystem">LCD Soundsystem</option>
+          <option value="Jenny Lewis">Jenny Lewis</option>
+          <option value="Chairlift">Chairlift</option>
+          <option value="Okkervil River">Okkervil River</option>
+          <option value="Belle and Sebastian">Belle & Sebastian</option>
+        </select>
+        <span class="header2">Albums:</span>
+        <select class="albums">
+          <option value=""selected>Album Options</option>
+          <option value="Sound Of Silver">Sound Of Silver</option>
+          <option value="This Is Happening">This Is Happening</option>
+          <option value="Acid Tongue">Acid Tongue</option>
+          <option value="The Voyager">The Voyager</option>
+          <option value="Something">Something</option>
+          <option value="Moth">Moth</option>
+          <option value="Don't Fall In Love With Everyone You Meet">Don't Fall In Love With Everyone You Meet</option>
+          <option value="The Stage Names">The Stage Names</option>
+          <option value="The Stand Ins">The Stand Ins</option>
+          <option value="Write About Love">Write About Love</option>
+          <option value="Girls in Peacetime Want to Dance">Girls in Peacetime Want to Dance</option>
+        </select>
+        <div class="checkboxes">
+          <div class="genre">Genre:</div>
+          <form class="leftbuttons">
+            <div><input id="top" type="checkbox" name="genre" value="Rock">Rock</div>
+            <div><input type="checkbox" name="genre" value="Pop">Pop</div>
+            <div><input id="middle" type="checkbox" name="genre" value="Indie">Indie</div>
+          </form>
+          <form class="rightbuttons">
+            <div><input type="checkbox" name="genre" value="Jazz">Jazz</div>
+            <div><input id="bottom" type="checkbox" name="genre" value="Hip Hop">Hip Hop</div>
+            <div><input type="checkbox" name="genre" value="Classical">Classical</div>
+          </form>
+        </div>
+        <button class ="filter" name="submit">Filter</button>
       </div>
-      <button class ="filter" name="submit">Filter</button>
-    </div>
-    <article id="songList" class="songInput">
-<!--     song output from js here -->
-    </article>
-</section>
-
-<section class="hidden" id="add-view">
-  <div>
-  <input type="text" name="song" placeholder="Song" id="userSongInput" class="newMusic">
-  <input type="text" name="artist" placeholder="Artist" id="userArtistInput" class="newMusic">
-  <input type="text" name="album" placeholder="Album" id="userAlbumInput" class="newMusic">
-  </div>
-  <div>
-  <button name="add" id="addMusicButton" class="newMusic">Add</button>
-  </div>
-</section>
-  <script src="home.js"></script>
-  <script src="list.js"></script>
-  <script src="add.js"></script>
-  <script src="songs.js"></script>
-</body>
+      <article id="songList" class="songInput">
+        <!--     song output from js here -->
+      </article>
+    </section>
+    <section class="hidden" id="add-view">
+      <div>
+        <input type="text" name="song" placeholder="Song" id="userSongInput" class="newMusic">
+        <input type="text" name="artist" placeholder="Artist" id="userArtistInput" class="newMusic">
+        <input type="text" name="album" placeholder="Album" id="userAlbumInput" class="newMusic">
+      </div>
+      <div>
+        <button name="add" id="addMusicButton" class="newMusic">Add</button>
+      </div>
+    </section>
+    <script src="home.js"></script>
+    <script src="list.js"></script>
+    <script src="add.js"></script>
+    <script src="songs.js"></script>
+  </body>
 </html>

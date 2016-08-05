@@ -61,16 +61,15 @@
   height: 7%;
  }
 
-
 .songSection p {
-  list-style: none;
   display: inline-block;
-  /*border-right: 2px solid;*/
-  padding: 0 14px;
+  border-right: 2px solid;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 13px;
 }
 
 #songList {
-
   margin-left: 40px;
   background-color: #FEFAC0;
   border: 2px solid;
